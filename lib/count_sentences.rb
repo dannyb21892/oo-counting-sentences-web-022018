@@ -21,5 +21,6 @@ class String
         out += 1
       end
       out
+    end
   end
 end
