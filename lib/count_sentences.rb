@@ -18,7 +18,7 @@ class String
     out = 0
     i = 0
     while i < self.length
-      if [".", "?", "!"].include?(self[i]) && self[i+1] == " "
+      if [".", "?", "!"].include?(self[i]) && (self[i+1] == " " || self[i+1] == nil)
         out += 1
       end
       i += 1
