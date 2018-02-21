@@ -15,6 +15,10 @@ class String
   end
 
   def count_sentences
-
+    out = 0
+    self.each do |char|
+      if [".", "?", "!"].include?(char) && 
+        
+      end
   end
 end
