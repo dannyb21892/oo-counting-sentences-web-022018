@@ -16,11 +16,14 @@ class String
 
   def count_sentences
     out = 0
-    self.each do |char, i|
-      if [".", "?", "!"].include?(char) && char[i+1] == " "
+    i = 0
+    while i < self.length
+      if [".", "?", "!"].include?(self[i]) && self[i+1] == " "
         out += 1
       end
-      out
+      i += 1
     end
+    out
   end
+  
 end
